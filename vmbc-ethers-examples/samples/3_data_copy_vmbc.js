@@ -5,14 +5,14 @@ fs = require("fs");
 const { exit } = require("process");
 const path = require('path');
 
-var VMBC_URL = 'http://127.0.0.1:8545';
+var VMBC_JSON_RPC_URL = 'http://127.0.0.1:8545';
 
 // Setting up a JSON RPC Provider
-var provider_vmbc = new ethers.providers.JsonRpcProvider(VMBC_URL);
+var provider_vmbc = new ethers.providers.JsonRpcProvider(VMBC_JSON_RPC_URL);
 
-account2_str_vmbc = "0x784e2c4D95c9Be66Cb0B9cda5b39d72e7630bCa8";
-account2_key_vmbc = "5094f257d3462083bcbc02c61d98c038cfa71cdd497834c5f38cd75010ddb7a5";
-const wallet_vmbc = new ethers.Wallet(account2_key_vmbc, provider_vmbc);
+// Account 1 Private Key 
+const private_key_acc_2 = "Change-this-to-a-Private-Key-of-an-Account-in-VMBC";
+const wallet_vmbc = new ethers.Wallet(private_key_acc_2, provider_vmbc);
 
 var CONTRACT_FILE = String("../contracts/DataCopy.sol");
 var CONTRACT_NAME = path.parse(CONTRACT_FILE).name;

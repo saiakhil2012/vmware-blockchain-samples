@@ -1,24 +1,16 @@
-const { ethers, BigNumber } = require("ethers-enhanced");
-fs = require("fs");
+const { ethers, BigNumber } = require("@vmware-blockchain/ethers");
 
-// Accounts VMBC
-const account1 = "0x44DfF3F7Afb4Db7fea41267024466fCea391D53F"; // Acc1
-const private_key1 = "73b9b07f4d7570bc8982c9a628ca5033ba9753e6a4e243ced877af5c393905a7";
+// Account 1 Private Key
+const private_key_acc_1 = "Change-this-to-a-Private-Key-of-an-Account-in-VMBC";
 
-const account2 = "0x180A3D5bfe4A1a50Aaf2CB99EE5FB469032BCc85"; // Acc2
-const private_key2 = "3938e280b7f782d4675a9a3383875116af580633ff4c78763c2539d76ab51bde";
-
-const account3 = "0xc8CEDEA82B307E79aAC253B137bb1f47De302f19"; // Acc3
-const private_key3 = "cf75211ef8a5567fdc4afef5086456ce46f3d6f47d3b3e1a72e1b844d330dcee";
-
-const account4 = "0x784e2c4D95c9Be66Cb0B9cda5b39d72e7630bCa8"; // Acc4
-const private_key4 = "5094f257d3462083bcbc02c61d98c038cfa71cdd497834c5f38cd75010ddb7a5";
+// Account 3 Private Key
+const private_key_acc_3 = "Change-this-to-a-Private-Key-of-an-Account-in-VMBC";
 
 // VMBC Provider
 const provider = new ethers.providers.JsonRpcBatchProvider('http://127.0.0.1:8545');
 
-const signer1 = new ethers.Wallet(private_key1, provider);
-const signer3 = new ethers.Wallet(private_key3, provider);
+const signer1 = new ethers.Wallet(private_key_acc_1, provider);
+const signer3 = new ethers.Wallet(private_key_acc_3, provider);
 
 const main = async () => {
     // Checking account balances before transfer transactions
@@ -63,12 +55,11 @@ const main = async () => {
     var transferPromise2 = signer3.sendTransaction(rawTx2);
 
     var [tx1, tx2] = await Promise.all([transferPromise1, transferPromise2]);
-    //console.log(tx1);
-    //console.log(tx2);
+
     console.log("Transferred 0.05 from account1 to account2");
     console.log("Transferred 0.10 from account3 to account4");
 
-    // // Checking account balances after transfer transactions
+    // Checking account balances after transfer transactions
     promise1 = provider.getBalance(account1);
     promise2 = provider.getBalance(account2);
     promise3 = provider.getBalance(account3);
@@ -83,3 +74,32 @@ const main = async () => {
 }
 
 main();
+
+// Verifies if the variable(s) needed to be changed to run this sample are indeed changed
+function verifySampleSetup() {
+    var verified = true;
+    if (verifyPrivateKeyChanged(private_key_acc_1) == false ) {
+        verified = false;
+        console.log("Before running this sample, update the private_key1_vmbc as instructed in README")
+    }
+    if (verifyPrivateKeyChanged(private_key_acc_3) == false) {
+        verified = false;
+        console.log("Before running this sample, update the private_key_acc_3 as instructed in README")
+    }
+    if (verified == false) {
+        console.log("Make neessary changes before running the sample");
+        process.exit(1);
+    }
+}
+  
+function verifyContractAddressChanged(contract_address) {
+    if (contract_address === "Change-this-to-Contract-Address-of-Greetings-Contract") {
+        return false;
+    }
+}
+
+function verifyPrivateKeyChanged(private_key) {
+    if (private_key === "Change-this-to-Contract-Address-of-Greetings-Contract") {
+        return false;
+    }
+}

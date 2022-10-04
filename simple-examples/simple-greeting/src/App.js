@@ -20,8 +20,8 @@ class App extends Component {
 
   async componentDidMount() {
     try {
-      var accouts = await window.ethereum.request({method: 'eth_requestAccounts'});
-      console.log(accouts);
+      var accounts = await window.ethereum.request({method: 'eth_requestAccounts'});
+      console.log(accounts);
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const contract = new ethers.Contract(CONTRACT_ADDRESS, CONTRACT_ABI, provider.getSigner());
       var oldGreeting = await contract.getGreeting();

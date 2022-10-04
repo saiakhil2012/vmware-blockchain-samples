@@ -14,14 +14,6 @@ async function main() {
   console.log(
     `Greeting deployed to ${greeting.address}`
   );
-
-  const DataCopy = await hre.ethers.getContractFactory("DataCopy");
-  const dataCopy = await DataCopy.deploy();
-
-  await dataCopy.deployed();
-  console.log(
-    `DataCopy deployed to ${dataCopy.address}`
-  );
 }
 
 // We recommend this pattern to be able to use async/await everywhere

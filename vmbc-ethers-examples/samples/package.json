@@ -12,8 +12,6 @@
     "@vmware-blockchain/ethers": "0.0.2",
     "console": "0.7.2",
     "dotenv": "16.0.1",
-    "ethers": "5.6.9",
-    "ethers-enhanced": "^5.6.30",
     "fs": "0.0.1-security",
     "solc": "^0.8.15"
   }
