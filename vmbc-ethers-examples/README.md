@@ -16,6 +16,10 @@ Samples for using VMBC Ethers
 * Deploy VMware Blockchain
 * Install npm packages
 ```sh
+# For hardhat related config
+npm install
+cd sample-dapps
+# For sample dapps
 npm install
 ```
 
@@ -35,7 +39,7 @@ Note: Make a note of Contract Address of Greetings Smart Contract from the outpu
 * Update the `CONTRACT_ADDRESS` to the contract address received from Deploying usin Hardhat step
 #### Executing
 ```sh
-node sample-dapps/1_get_greetings.js
+node 1_get_greetings.js
 ```
 
 ---
@@ -48,7 +52,7 @@ node sample-dapps/1_get_greetings.js
 * Update the `PRIVATE_KEY_ACC` to the private key of an account
 #### Executing
 ```sh
-node sample-dapps/2_set_greetings.js
+node 2_set_greetings.js
 ```
 
 ---
@@ -63,7 +67,7 @@ node sample-dapps/2_set_greetings.js
 * Update the `PRIVATE_KEY_ACC` to the private key of an account
 #### Executing
 ```sh
-node sample-dapps/3_data_copy.js
+node 3_data_copy.js
 ```
 
 ---
@@ -77,7 +81,7 @@ node sample-dapps/3_data_copy.js
 * Update the `PRIVATE_KEY_ACC_1` and `PRIVATE_KEY_ACC_3` to the private key of two accounts
 #### Executing
 ```sh
-node sample-dapps/4_batching.js
+node 4_batching.js
 ```
 
 ---
