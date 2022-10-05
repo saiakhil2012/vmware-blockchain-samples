@@ -78,7 +78,8 @@ node 3_data_copy.js
   * Batching of multiple read based calls
   * Batching of multiple write based transactions
 #### Setup
-* Update the `PRIVATE_KEY_ACC_1` and `PRIVATE_KEY_ACC_3` to the private key of two accounts
+* Update `ACCOUNT_1`, `ACCOUNT_2`, `ACCOUNT_3` and `ACCOUNT_4` to the account addresses for 4 accounts 
+* Update the corresponding `PRIVATE_KEY_ACC_1` and `PRIVATE_KEY_ACC_3` to the private key of those two accounts
 #### Executing
 ```sh
 node 4_batching.js
