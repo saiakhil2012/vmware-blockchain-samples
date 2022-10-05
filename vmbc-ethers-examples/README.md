@@ -1,4 +1,4 @@
-## VMBC Ethers Samples
+## VMBC Ethers Sample DApps
 
 ### Table of Contents
 1. [Overview](#overview)
