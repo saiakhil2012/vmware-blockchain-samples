@@ -21,15 +21,20 @@ export default {
       {
         text: 'Sample DApps',
         link: '/sample-dapps',
-        children: ['/sample-dapps/artemis', '/sample-dapps/erc20-swap'],
+        children: [{
+          text: "Artemis",
+          link: '/sample-dapps/artemis'
+        },
+        {
+          text: 'ERC20 Swap',
+          link: '/sample-dapps/erc20-swap'
+        }]
       },
       // Accountable Privacy
       {
         text: 'Accountable Privacy',
         children: ['/accountable-privacy'],
-      },
-      // string - page file path
-      '/bar/README.md',
+      }
     ],
   }),
 }
