@@ -6,6 +6,7 @@ export default {
   description: 'Description goes Here',
   base: '/vmware-blockchain-samples/',
   theme: defaultTheme({
+    sidebar: 'auto',
     navbar: [
       // Deployment
       {
@@ -33,8 +34,8 @@ export default {
       // Accountable Privacy
       {
         text: 'Accountable Privacy',
-        children: ['/accountable-privacy'],
-      }
+        link: '/accountable-privacy',
+      },
     ],
   }),
 }
