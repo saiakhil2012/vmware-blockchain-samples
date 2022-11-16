@@ -22,7 +22,7 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
 
-  base: "/vmware-blockchain-samples/",
+  base: "/vmware-blockchain-samples/docs",
 
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
