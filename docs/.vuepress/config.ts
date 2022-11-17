@@ -8,6 +8,11 @@ export default {
   theme: defaultTheme({
     sidebar: 'auto',
     navbar: [
+      // Quick Start Guide
+      {
+        text: 'Quick Start Guide',
+        link: '/quick-start-guide',
+      },
       // Deployment
       {
         text: 'Deployment',
