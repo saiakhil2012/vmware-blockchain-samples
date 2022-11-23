@@ -7,6 +7,8 @@ export default {
   base: '/vmware-blockchain-samples/',
   theme: defaultTheme({
     sidebar: 'auto',
+    repo: 'vmware-samples/vmware-blockchain-samples',
+    contributors: false,
     navbar: [
       // Quick Start Guide
       {
