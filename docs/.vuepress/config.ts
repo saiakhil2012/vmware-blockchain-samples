@@ -9,6 +9,7 @@ export default {
     sidebar: 'auto',
     repo: 'vmware-samples/vmware-blockchain-samples',
     contributors: false,
+    editLink: false,
     navbar: [
       // Quick Start Guide
       {

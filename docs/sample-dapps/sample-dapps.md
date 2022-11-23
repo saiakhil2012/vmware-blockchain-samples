@@ -1,6 +1,6 @@
 # (WIP) Sample DApps
 
-In Progress
+Work In Progress
 
 Lead:
 
