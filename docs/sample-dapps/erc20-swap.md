@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# (WIP) ERC20 Swap
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -146,4 +146,4 @@ Here you will find DApp and Smart Contract samples of how to deploy and interact
        ```
        $ ssh-add -K ~/.ssh/github
         Identity added: /Users/abc/.ssh/github
-       ```
+       ``` 

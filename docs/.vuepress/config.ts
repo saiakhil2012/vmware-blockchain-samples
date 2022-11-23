@@ -13,6 +13,11 @@ export default {
         text: 'Quick Start Guide',
         link: '/quick-start-guide',
       },
+      // Accountable Privacy
+      {
+        text: 'Privacy',
+        link: '/privacy',
+      },
       // Deployment
       {
         text: 'Deployment',
@@ -22,6 +27,11 @@ export default {
       {
         text: 'Permissioning',
         link: '/permissioning',
+      },
+      // Block Explorer
+      {
+        text: 'Block Explorer',
+        link: '/block-explorer',
       },
       // Sample DApps
       {
@@ -35,12 +45,7 @@ export default {
           text: 'ERC20 Swap',
           link: '/sample-dapps/erc20-swap'
         }]
-      },
-      // Accountable Privacy
-      {
-        text: 'Accountable Privacy',
-        link: '/accountable-privacy',
-      },
+      }
     ],
   }),
 }

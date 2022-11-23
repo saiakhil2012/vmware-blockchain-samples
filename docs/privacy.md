@@ -1,4 +1,4 @@
-# (WIP) Permissioning
+# (WIP) Privacy
 
 In Progress
 

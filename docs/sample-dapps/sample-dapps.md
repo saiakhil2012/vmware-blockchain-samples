@@ -1,6 +1,6 @@
-# Sample DApps
+# (WIP) Sample DApps
 
-Sample DApps Content
+In Progress
 
 Lead:
-Engineers: 
+Engineer(s):
