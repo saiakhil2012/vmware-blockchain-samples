@@ -19,17 +19,17 @@ export default {
       // Accountable Privacy
       {
         text: 'Privacy',
-        link: '/privacy',
+        link: '/privacy/privacy',
       },
       // Deployment
       {
         text: 'Deployment',
-        link: '/deployment',
+        link: '/deployment/deployment',
       },
       // Permissioning
       {
         text: 'Permissioning',
-        link: '/permissioning',
+        link: '/permissioning/permissioning',
       },
       // Block Explorer
       {

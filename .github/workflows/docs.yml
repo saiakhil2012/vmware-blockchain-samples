@@ -39,6 +39,10 @@ jobs:
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn --frozen-lockfile
 
+      # copy content from dev kit to docs directory dynamically
+      - name: Copy content from dev kit to docs
+        run: yarn docs:copy
+
       # run build script
       - name: Build VuePress site
         run: yarn docs:build
